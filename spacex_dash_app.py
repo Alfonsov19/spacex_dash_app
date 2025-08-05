@@ -97,6 +97,10 @@ def get_scatter_plot(entered_site, payload_range):
                      color='Booster Version Category',
                      title='Correlation Between Payload and Launch Success')
     return fig
+app = dash.Dash(__name__)
+app.title = "SpaceX Dashboard"
+server = app.server
+
 
 # Run the app
 if __name__ == '__main__':
